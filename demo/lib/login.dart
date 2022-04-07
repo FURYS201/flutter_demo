@@ -16,7 +16,7 @@ class login extends StatelessWidget {
     var CommunityMaterialIcons;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "NHU jashas",
+      title: "NHU",
       home: Scaffold(
           appBar: AppBar(
               backgroundColor: Colors.white,
