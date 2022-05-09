@@ -1,21 +1,21 @@
 import 'dart:convert';
 import 'dart:async';
-import 'package:demo/Home/Models/Cart.dart';
+import 'package:demo/Home/Models/cartModel.dart';
 import 'package:demo/Home/widget/dismissible_widget.dart';
 import 'package:http/http.dart' as http;
 import 'package:animate_do/animate_do.dart';
 import 'package:demo/Home/Widget/app_bar.dart';
-import 'package:demo/Home/theme/colors.dart';
+import 'package:demo/Home/Color/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 
-List<Products> parseProducts(String responseBody) {
+List<Cast> parseProducts(String responseBody) {
   final parsed = json.decode(responseBody).cast<Map<String, dynamic>>();
-  return parsed.map<Products>((json) => Products.fromMap(json)).toList();
+  return parsed.map<Cast>((json) => Cast.fromMap(json)).toList();
 }
 
-Future<List<Products>> fetchProducts() async {
+Future<List<Cast>> fetchProducts() async {
   final response = await http.get(
       Uri.parse('https://624aab21fd7e30c51c101b00.mockapi.io/ShoeListModel'));
   if (response.statusCode == 200) {
@@ -31,7 +31,7 @@ Future<List<Products>> fetchProducts() async {
 // }
 
 class CartPage extends StatelessWidget {
-  final Future<List<Products>> products;
+  final Future<List<Cast>> products;
   CartPage({Key? key, required this.products}) : super(key: key);
 
   // This widget is the root of your application.
@@ -50,7 +50,7 @@ class CartPage extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
   final String title;
-  final Future<List<Products>> products;
+  final Future<List<Cast>> products;
   MyHomePage({Key? key, required this.title, required this.products})
       : super(key: key);
 
@@ -59,7 +59,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: FutureBuilder<List<Products>>(
+        child: FutureBuilder<List<Cast>>(
           future: products,
           builder: (context, snapshot) {
             if (snapshot.hasError) print(snapshot.error);
@@ -78,7 +78,7 @@ class MyHomePage extends StatelessWidget {
 
 class ProductBox extends StatelessWidget {
   ProductBox({Key? key, required this.item}) : super(key: key);
-  final Products item;
+  final Cast item;
 
   Widget build(BuildContext context) {
     return Container(
@@ -167,7 +167,7 @@ class ProductBox extends StatelessWidget {
 }
 
 class ProductBoxList extends StatelessWidget {
-  final List<Products> items;
+  final List<Cast> items;
   ProductBoxList({Key? key, required this.items});
 
   @override

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import 'package:demo/Home/Component/defaultElements.dart';
-import 'package:demo/Home/Models/ShoeListModel.dart';
-import 'package:demo/Home/Screens/DetailScreen.dart';
+import 'package:demo/Home/Color/defaultElements.dart';
+import 'package:demo/Home/Models/homeshoelistModel.dart';
+import 'package:demo/Home/Screens/pages/detail_home_page.dart';
 
 class Itemcards extends StatelessWidget {
   final ShoeListModel shoeListModel;
@@ -13,7 +13,8 @@ class Itemcards extends StatelessWidget {
   const Itemcards({
     Key? key,
     required this.shoeListModel,
-    required this.index, ShoeListModel,
+    required this.index,
+    ShoeListModel,
   }) : super(key: key);
 
   @override

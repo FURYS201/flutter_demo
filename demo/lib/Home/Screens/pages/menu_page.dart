@@ -1,6 +1,6 @@
 import 'package:animate_do/animate_do.dart';
-import 'package:demo/Home/Screens/HomePage.dart';
-import 'package:demo/Home/theme/colors.dart';
+import 'package:demo/Home/Screens/pages/home_page.dart';
+import 'package:demo/Home/Color/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

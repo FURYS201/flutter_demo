@@ -1,15 +1,15 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
-import 'package:demo/Home/Screens/HomePage.dart';
-import 'package:demo/Home/Screens/pages/cart_page.dart';
 import 'package:demo/Home/Screens/pages/home_page.dart';
-import 'package:demo/Home/Screens/pages/product_detail_page.dart';
+import 'package:demo/Home/Screens/pages/cart_page.dart';
+import 'package:demo/Home/Screens/pages/favorite_page.dart';
+import 'package:demo/Home/Screens/pages/detail_favorite_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 
-import 'Component/defaultElements.dart';
-import 'Screens/IdentityPage.dart';
+import 'Color/defaultElements.dart';
+import 'Screens/pages/account_page.dart';
 
 class Navigation extends StatefulWidget {
   const Navigation({Key? key}) : super(key: key);

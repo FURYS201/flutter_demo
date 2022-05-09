@@ -1,8 +1,10 @@
+
 // @dart=2.9
-import 'package:demo/Home/screens/HomePage.dart';
 import 'package:demo/start.dart';
 import 'package:flutter/material.dart';
-import 'package:demo/constants.dart';
+
+
+import 'Home/Color/constants.dart';
 
 void main() {
   runApp(new MyApp());

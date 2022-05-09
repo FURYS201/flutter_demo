@@ -1,6 +1,6 @@
 import 'package:demo/Home/Screens/pages/cart_page.dart';
 import 'package:demo/Home/Screens/pages/menu_page.dart';
-import 'package:demo/Home/theme/colors.dart';
+import 'package:demo/Home/Color/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

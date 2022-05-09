@@ -2,17 +2,19 @@ import 'package:demo/register.dart';
 import 'package:demo/login.dart';
 import 'package:flutter/material.dart';
 
+
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Bắt đầu',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Start'),
     );
   }
 }
@@ -75,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                   child: Text(
-                    "LOGIN",
+                    "Đăng Nhập",
                     style: TextStyle(color: Colors.orange),
                   ),
                 ),
@@ -95,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                   child: Text(
-                    "REGISTER NOW",
+                    "Đăng ký ngay",
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
@@ -105,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    'Quick Login with Touch ID',
+                    'Đăng nhập nhanh bằng Touch ID',
                     style: TextStyle(
                         fontFamily: 'Montserrat', color: Colors.white),
                   )
@@ -115,8 +117,8 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 height: 60,
                 // child: RaisedButton(
-                child:
-                    Image.asset('lib/icons/touchid.png', color: Colors.white),
+                child: Image.asset('assets/icons/touchid.png',
+                    color: Colors.white),
                 // onPressed: () {
                 //   Navigator.push(
                 //       context,

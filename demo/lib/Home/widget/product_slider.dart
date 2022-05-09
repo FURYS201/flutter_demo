@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-import 'package:demo/Home/theme/colors.dart';
+import 'package:demo/Home/Color/colors.dart';
 
 class ActiveDot extends StatelessWidget {
   @override
